@@ -16,7 +16,6 @@ http.createServer(function (req, res) {
   });
   rl.on('close', function() {
     console.log(lineCount);
-    console.timeEnd("Read Ended in: ");
   });
 }).listen(port, hostname, () => {
   console.log(`http://${hostname}:${port}/ Just Started`);
